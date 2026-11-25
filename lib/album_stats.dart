@@ -1,10 +1,6 @@
 import 'album.dart';
 
-typedef AlbumStats = ({
-  int count,
-  int totalTracks,
-  Duration totalDuration,
-});
+typedef AlbumStats = ({int count, int totalTracks, Duration totalDuration});
 
 AlbumStats summarizeAlbums(Iterable<Album> albums) {
   var count = 0;

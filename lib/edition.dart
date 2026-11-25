@@ -47,4 +47,5 @@ String editionKind(AlbumEdition edition) => switch (edition) {
   LiveEdition(venue: final venue) => 'live ($venue)',
   RemasteredEdition(year: final year) => 'remaster ($year)',
   CompilationEdition(sourceAlbumCount: final count) => 'compilation ($count)',
+  PlaylistBadge() => 'playlist',
 };

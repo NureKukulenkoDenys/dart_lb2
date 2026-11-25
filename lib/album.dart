@@ -42,7 +42,9 @@ final class Album(
     final tracks = int.tryParse(fields[4]);
     final minutes = int.tryParse(fields[5]);
     if (year == null || tracks == null || minutes == null) {
-      throw const FormatException('Year, track count and minutes must be integers.');
+      throw const FormatException(
+        'Year, track count and minutes must be integers.',
+      );
     }
     return Album(
       fields[0],
